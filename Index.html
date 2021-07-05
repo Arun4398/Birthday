@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>பிறந்தநாள் வாழ்த்துக்கள்</title>
+<link rel="icon" href="./Images/cake.png" type="image/gif" sizes="16x16">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Yomogi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
+<style>
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body {
+font-size: 16px;
+line-height: 1.3;
+-webkit-font-smoothing: antialiased;
+font-family: 'Roboto', sans-serif;
+background: #f2f2f2;
+color: #333;
+max-width: 100%;
+margin: 0 auto;
+overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+margin: 0;
+margin-bottom: 15px;
+font-family: 'Kavivanar', cursive;
+}
+h5 {
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+color:rgba(104,104,248,1.0);
+font-size: 20px;
+line-height: 29px;
+margin-bottom: 10px;
+}
+h1 {
+font-weight: 400;
+font-style: normal;
+text-decoration: none;
+color: #fff;
+font-size: 49px;
+line-height: 55px;
+margin-bottom: 10px;
+
+}
+.hero_bg_video {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+z-index:0;
+opacity:1;
+overflow:hidden;
+}
+.bg-video__content_hero {
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.lp_day_counter_section .shape_img{
+position: absolute;
+top: unset;
+bottom: -1px ;
+left: 0;
+right: 0;
+margin: 0 auto;
+width: 100%;
+z-index: 1;
+}
+
+.lp_day_counter_main{
+position:relative;
+background-attachment:fixed !important;
+background-position:center !important;
+background-repeat: no-repeat !important;
+background-size: cover !important;
+}
+.lp_day_counter_overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
+opacity: .3;
+}
+.lp_day_counter_fix{
+padding:10.5px;
+text-align:center;
+
+position:relative;
+z-index:5;
+}
+.spacing_adj{
+max-width:800px;
+margin:0 auto;
+}
+.lp_day_counter_section.style_change .lp_day_counter_fix{
+min-height:auto;
+padding:100px 0 150px;
+}
+.day_counter_heading{
+position:relative;
+}
+.day_counter_heading h5{
+padding-top:14px;
+margin-bottom:21px;
+font-weight:700;
+}
+.event_day_counter ul{
+margin:0;
+padding:0;
+}
+.event_day_counter ul span{
+display:block;
+font-size:63px;
+}
+.event_day_counter li{
+list-style:none;
+display: inline-block;
+font-weight: 700;
+font-size: 18px;
+list-style-type: none;
+padding:18px;
+text-transform: uppercase;
+color:#fff;
+}
+.cta_space{
+margin:0 10px;
+padding-top:30px;
+}
+.cta_class.cta_adj{
+padding-top:0px;
+}
+.four_column_item{
+text-align:left;
+padding:10px;
+}
+.four_column_item img{
+max-width:60px;
+width:100%;
+margin-bottom:25px;
+}
+.four_column_section{
+padding-top:70px;
+}
+.lp_day_counter_section .event_result{
+display:none;
+}
+.event_result lottie-player {
+max-width: 600px;
+margin: 0 auto;
+width: 100% !important;
+height: auto !important;
+}
+.flex-fix{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+min-height:100vh;
+}
+@media(max-width:767px){
+.flex_item_4.four_column_item{
+flex-basis:50%;
+}
+.day_counter_heading h1{
+font-size:42px;
+}
+}
+@media(max-width:580px){
+.day_counter_heading h1{
+font-size:36px;
+}
+.event_day_counter ul span{
+font-size:50px;
+}
+}
+@media(max-width:480px){
+.flex_item_4.four_column_item{
+flex-basis:100%;
+}
+.cta_class{
+flex-direction:column !important;
+}
+}
+
+</style>
+</head>
+
+<body>
+<section class="lp_day_counter_section ">
+
+<div class="lp_day_counter_main section-bg section-padding" style="background:url(./Images/pexels-katerina-holmes-5911184.jpg);">
+
+<!-- <img class="shape_img" src=".\Images\shape.svg" alt="shape"> -->
+
+
+<div class="lp_day_counter_overlay branding_color_bg common_bg_change"></div>
+
+<div class="content-wrapper">
+
+<div class="lp_day_counter_fix display_flex flex-align all-text-white">
+<div class="flex-fix">
+<div class="day_counter_heading branding_color_h5 spacing_adj">
+<h5 class="">ஜூலை 6, 2021</h5>
+<h1>பிறப்பின் நகர்வு அற்புதமானது ஒவ்வொரு முறை வரும் போதும் மிகவும் அழகாகிறது.</h1>   
+</div>
+
+<div class="event_day_counter spacing_adj" data-x="Jul 6, 2021 00:00:00">
+<ul>
+<li><span id="days-two"></span>DAYS</li>
+<li><span id="hours-two"></span>HOURS</li>
+<li><span id="minutes-two"></span>MINUTES</li>
+<li><span id="seconds-two"></span>SECONDS</li>
+</ul>
+<div class="event_result">
+<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_shlwmfns.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop  autoplay></lottie-player>
+<h1></h1>
+</div>
+</div> 
+
+
+</div>
+</div>  
+
+</div> 
+
+</div> 
+
+</section>  
+
+
+
+</body>
+<script>
+$(document).ready(function() {
+const second = 1000,
+minute = second * 60,
+hour = minute * 60,
+day = hour * 24;
+
+
+var event = $(".event_day_counter").attr("data-x")
+var countday = new Date(event).getTime()
+var x = setInterval(function() {
+var now = new Date().getTime()
+var  distance = countday - now;
+
+$('#days-two').text( Math.floor(distance / (day)))
+$('#hours-two').text (Math.floor((distance % (day)) / (hour)))
+$('#minutes-two').text( Math.floor((distance % (hour)) / (minute)))
+$('#seconds-two').text( Math.floor((distance % (minute)) / second))
+
+
+
+if (distance < 0) {
+clearInterval(x);
+$(".event_day_counter.spacing_adj ul").hide();
+$(".lp_day_counter_section .event_result").show();
+$(".event_result h5").text("ENDHRA KUMAR")
+}
+
+}, second)
+
+});
+$(document).ready(function($){
+
+$('.playicon').click(function()
+    {
+$(".popup_gallery_main_sec").addClass('is-visible_sec');
+})
+
+$('.bts-popup-close').click(function()
+            {
+$(".popup_gallery_main_sec").removeClass('is-visible');
+})
+});
+
+const $menu = $('.popup_inner_video');
+$('.popup_gallery_main_sec').click(e => {
+if (!$menu.is(e.target) && $menu.has(e.target).length === 0) 
+{
+$(".popup_gallery_main_sec").removeClass('is-visible');
+}
+});
+
+</script>
+
+</html>
